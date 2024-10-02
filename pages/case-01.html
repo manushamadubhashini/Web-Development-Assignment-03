@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>case-01</title>
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+      }
+      .box {
+        width: 50%;
+        height: 50%;
+        position: absolute;
+      }
+      .top-left {
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+      .top-right {
+        top: 0;
+        right: 0;
+        background-color: green;
+      }
+      .bottom-left {
+        bottom: 0;
+        left: 0;
+        background-color: orange;
+      }
+      .bottom-right {
+        bottom: 0;
+        right: 0;
+        background-color: hotpink;
+      }
+      .corner-quarter {
+        width: 12vw;
+        height: 12vw;
+        background-color: white;
+        position: absolute;
+      }
+      .corner-top-left {
+        top: 0;
+        left: 0;
+        border-bottom-right-radius: 100%;
+      }
+      .corner-top-right {
+        top: 0;
+        right: 0;
+        border-bottom-left-radius: 100%;
+      }
+      .corner-bottom-left {
+        bottom: 0;
+        left: 0;
+        border-top-right-radius: 100%;
+      }
+      .corner-bottom-right {
+        bottom: 0;
+        right: 0;
+        border-top-left-radius: 100%;
+      }
+      .center-quarter {
+        width: 7vw;
+        height: 7vw;
+        background-color: white;
+        position: absolute;
+      }
+      .circle {
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .square {
+        width: 90px;
+        height: 90px;
+        background-color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .center-square {
+        width: 220px;
+        height: 220px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .center-circle {
+        width: 130px;
+        height: 130px;
+        background-color: red;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box top-left">
+        <div class="center-quarter corner-top-right"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </div>
+      <div class="box top-right">
+        <div class="center-quarter corner-top-left"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </div>
+      <div class="box bottom-left">
+        <div class="center-quarter corner-bottom-right"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </div>
+      <div class="box bottom-right">
+        <div class="center-quarter corner-bottom-left"></div>
+        <div class="circle"></div>
+        <div class="square"></div>
+      </div>
+      <div class="corner-quarter corner-top-left"></div>
+      <div class="corner-quarter corner-top-right"></div>
+      <div class="corner-quarter corner-bottom-left"></div>
+      <div class="corner-quarter corner-bottom-right"></div>
+      <div class="center-square"></div>
+      <div class="center-circle"></div>
+    </div>
+  </body>
+</html>

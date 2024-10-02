@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>case-04</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 700;
+      }
+      .main-container {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+      }
+      .container-1 {
+        background: white;
+      }
+      .container-2 {
+        background-color: #6cb4ee;
+      }
+      .container-3 {
+        background-color: grey;
+      }
+      .container-4 {
+        background-color: #ff3131;
+      }
+      header {
+        width: 100%;
+        display: flex;
+        color: white;
+        font-size: 20px;
+        position: sticky;
+        top: 0;
+      }
+      .header-01 {
+        background-color: red;
+      }
+      .header-02 {
+        background-color: #00308f;
+      }
+      .header-03 {
+        background-color: #353839;
+      }
+      .header-04 {
+        background-color: #834333;
+      }
+      header > p {
+        margin-left: 10px;
+      }
+      .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container container-1">
+      <div class="content">
+        <div><p>Hello</p></div>
+      </div>
+      <header class="header-01"><p>Card 1</p></header>
+    </div>
+    <div class="main-container container-2">
+      <div class="content">
+        <div><p>How</p></div>
+      </div>
+      <header class="header-02"><p>Card 2</p></header>
+    </div>
+    <div class="main-container container-3">
+      <div class="content">
+        <div><p>Are</p></div>
+      </div>
+      <header class="header-03"><p>Card 3</p></header>
+    </div>
+    <div class="main-container container-4">
+      <div class="content">
+        <div><p>You..?</p></div>
+      </div>
+      <header class="header-04"><p>Card 4</p></header>
+    </div>
+  </body>
+</html>
